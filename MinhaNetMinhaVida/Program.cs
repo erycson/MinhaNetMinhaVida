@@ -304,6 +304,9 @@ namespace MinhaNetMinhaVida
 
         private bool CheckSettings()
         {
+            ConfigurationManager.RefreshSection("appSettings");
+            settings = ConfigurationManager.AppSettings;
+
             string twitter = settings["TWITTER"] ?? "";
 
             string speed = settings["SPEED"] ?? "0";
