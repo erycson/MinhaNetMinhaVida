@@ -74,10 +74,8 @@ namespace MinhaNetMinhaVida
                 return;
             }
 
-            if (speedMult == "Gb/s")
-                speed = speed * 1048576;
-            else if (speedMult == "Mb/s")
-                speed = speed * 1024;
+            if (speedMult == "Mb/s")
+                speed *= 1024;
 
             Configuration configFile = ConfigurationManager.OpenExeConfiguration(ConfigurationUserLevel.None);
             KeyValueConfigurationCollection settings = configFile.AppSettings.Settings;

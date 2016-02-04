@@ -263,12 +263,12 @@ namespace MinhaNetMinhaVida
         {
             string twitter = settings["TWITTER"];
 
-            int speed = Convert.ToInt32(settings["SPEED"]); // convert bits/s to kb/s
+            int speed = Convert.ToInt32(settings["SPEED"]);
             int speedAvarage = Convert.ToInt32(settings["SPEED_AVG"]);
             int speedMinimun = Convert.ToInt32(settings["SPEED_MIN"]);
 
             string tweet = null;
-            if (speed > downloadSpeed * (speedMinimun / 100))
+            if (downloadSpeed < speed * (speedMinimun / 100))
             {
                 tweet = String.Format(
                     "Olá @{0}, pago por {1} e recebo {2}, e a Resolução nº 574? #MinhaNetMinhaVida @Anatel_Informa",
@@ -277,7 +277,7 @@ namespace MinhaNetMinhaVida
                     FormatDownloadSpeed(downloadSpeed)
                 );
             }
-            else if (speed > downloadSpeed * (speedAvarage / 100))
+            else if (downloadSpeed < speed * (speedAvarage / 100))
             {
                 tweet = String.Format(
                     "Olá @{0}, pago por {1} e recebo {2}. #MinhaNetMinhaVida @Anatel_Informa",
