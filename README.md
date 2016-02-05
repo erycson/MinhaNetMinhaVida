@@ -26,6 +26,6 @@ Com as informações necesárias já geradas agora vamos configurar o MNMV.
 5. Depois clique em **Salvar e Fechar**
 6. Novamente clique em com o botão direito do mouse no MNMV e depois clique em **Inciar**
 
-Pronto, apartir daqui o MNMV ficará restando sua internet automaticamente e publicará um tweet cada vez que sua internet estiver lenta.
+Pronto, apartir daqui o MNMV ficará testando sua internet automaticamente e publicará um tweet cada vez que sua internet estiver lenta.
 
 Obs.: As opções **Velocidade Média** e **Velocidade Mínima** estão configuradas para seguir a [Resolução nº 574, de 28 de outubro de 2011](http://www.anatel.gov.br/legislacao/resolucoes/26-2011/57-resolucao-574) da Anatel.
